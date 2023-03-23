@@ -25,7 +25,7 @@
 
 ## What 100% coverage means?
 
-100% coverage <strong style="color: #c44500">doesn't mean</strong> high quality tests
+100% coverage <strong class="orange">doesn't mean</strong> high quality tests
 
 ---
 
@@ -71,7 +71,7 @@ def test_f():
 
 or
 
-> "When a metric becomes a goal, it stops being a metric"
+> "When a metric becomes a goal, it's no longer a metric"
 
 ---
 
@@ -108,12 +108,12 @@ https://mutmut.readthedocs.io/en/latest/
 ## Recommendations
 
 - <strong class="organge">Backup yourself</strong>
-    - Mutation are **destructive**
+    - Mutation are <strong class="red">destructive</strong>
     - Use ``git`` (and have a backup)
 - Mutation tests can take long time
     - Whitelist code
-    - Don't run every mutation
-    - Run `pytest` with `-x` option: _fail fast_
+    - Do you need _every_ mutation?
+    - _Fail fast_: run `pytest` with `-x` option
     - Be careful about running in CI
 - `mutmut` is still buggy <span style="color: #aaa">(personal experience)</span>
     - See [Issue #259](https://github.com/boxed/mutmut/issues/259)
@@ -126,3 +126,18 @@ https://mutmut.readthedocs.io/en/latest/
 
 - [Cosmic Ray](https://cosmic-ray.readthedocs.io/en/latest/)
 - [MutPy](https://github.com/mutpy/mutpy)
+
+---
+
+<!-- .slide: class="center" -->
+
+# Max's talk
+
+<iframe
+width="1244" height="700"
+src="https://www.youtube.com/embed/bCGyj8n5F6k?start=20741"
+title="YouTube video player"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+allowfullscreen>
+</iframe>
